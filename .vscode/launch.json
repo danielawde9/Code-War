@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach Firefox",
+      "type": "firefox",
+      "request": "attach"
+    },
+    {
+      "name": "Launch Firefox",
+      "type": "firefox",
+      "request": "launch",
+      "timeout": 30,
+      "tmpDir": "/home/daniel/Desktop/test2",
+      "reAttach": true,
+      "url": "localhost:3000"
+    }
+  ]
+}

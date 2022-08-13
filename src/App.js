@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { codeWars1 } from "./CodeWars1";
+import { CodeWars2 } from "./CodeWars2";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <codeWars1 props="hello world" /> */}
+
+      <CodeWars2 xs={[20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]}/>
+      <br></br>
+      <CodeWars2 xs={[1, 1, 2, -2, 5, 2, 4, 4, -1, -2, 5]} />
+      <br></br>
+      <CodeWars2 xs={[20, 1, 1, 2, 2, 3, 3, 5, 5, 4, 20, 4, 5]} />
+      <br></br>
+      <CodeWars2 xs={[10]} />
+      <br></br>
+      <CodeWars2 xs={[1, 1, 1, 1, 1, 1, 10, 1, 1, 1, 1]} />
+      <br></br>
+      <CodeWars2 xs={[5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10]} />
+    </>
   );
 }
 
